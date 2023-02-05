@@ -19,7 +19,9 @@ jobs:
         uses: crazy-max/ghaction-docker-meta@v1
         with:
           images: hyunjine/test-image
-          tag-semver: 1.0
+          tag-semver: |
+            {{version}}
+            {{major}}.{{minor}}
       -
         name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
