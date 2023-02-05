@@ -13,7 +13,7 @@ spec:
         run: mynginx
     spec:
       containers:
-      - image: hyunjine/test-image:tagname
+      - image: nginx
         name: mynginx
         ports:
         - containerPort: 80
